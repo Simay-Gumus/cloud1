@@ -1,2 +1,2 @@
 #!/bin/bash
-(cd frontend && npm run dev) & (cd backend && npm run dev)
+(cd cloud-frontend && npm run dev) & (cd cloudTry3 && npm run dev)
