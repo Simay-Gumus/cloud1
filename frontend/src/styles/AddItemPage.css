@@ -1,0 +1,109 @@
+/* General container styles for AddItemPage */
+.add-item-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.add-item-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Error Message */
+.error-message {
+    font-size: 16px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+.form-group input[type="url"] {
+    padding: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button Styles */
+.submit-button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e65c00;
+}
+
+/* Form Field Focus Effect */
+input:focus,
+textarea:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .add-item-container {
+        padding: 15px;
+    }
+
+    .add-item-container h2 {
+        font-size: 24px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    .submit-button {
+        font-size: 16px;
+    }
+}
