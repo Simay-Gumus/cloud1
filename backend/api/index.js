@@ -2,9 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const itemRoutes = require('../routes/itemRoutes'); // updated path
-const userRoutes = require('../routes/userRoutes'); // updated path
-const serverless = require("serverless-http");
+const itemRoutes = require('../routes/itemRoutes');
+const userRoutes = require('../routes/userRoutes');
 
 const app = express();
 
@@ -35,6 +34,5 @@ mongoose.connection.on('disconnected', () => {
 app.use('/api/items', itemRoutes);
 app.use('/api/users', userRoutes);
 
-// Export the app as a serverless function
-module.exports.handler = serverless(app);
-
+// Export the Express app for Vercel
+module.exports = app;
