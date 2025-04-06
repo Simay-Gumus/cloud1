@@ -1,0 +1,160 @@
+/* General container styles */
+.item-detail-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    min-width: 1200px;
+    border-radius: 10px; /* Soft rounded corners for a more modern feel */
+}
+
+.item-left {
+    flex: 0.3;
+    padding-right: 20px;
+}
+
+/* Average Rating */
+.item-average-rating {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffcc00; /* Yellow for visibility */
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.item-average-rating:hover {
+    color: #ffb800; /* Slightly different shade on hover for interactivity */
+}
+
+.no-rating {
+    color: #777; /* Gray for no rating */
+}
+
+.item-mid {
+    flex: 0.3;
+    background: linear-gradient(145deg, #f9f9f9, #eaeaea); /* Subtle gradient for depth */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+}
+
+.item-mid:hover {
+    transform: translateY(-5px); /* Hover effect for interactivity */
+}
+
+.item-right {
+    flex: 0.4;
+    background: linear-gradient(145deg, #f9f9f9, #eaeaea);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    padding: 20px;
+}
+
+.item-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.item-image:hover {
+    transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+.item-name {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: #333;
+}
+
+.item-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+.item-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.item-seller,
+.item-battery,
+.item-age,
+.item-size,
+.item-material {
+    font-size: 16px;
+    color: #444;
+    margin: 5px 0;
+    font-weight: 500; /* Slightly bolder for better legibility */
+}
+
+/* Comments Section */
+.comment-item {
+    margin-bottom: 20px;
+    position: relative;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px; /* Softer corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    word-wrap: break-word;
+    transition: transform 0.3s ease;
+}
+
+.comment-item:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+.comment-item p {
+    margin: 5px 0;
+}
+
+.comment-rating {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.comment-text {
+    font-size: 16px;
+    color: #555;
+    flex-grow: 1;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.5; /* Better readability */
+}
+
+.no-comments {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Delete Comment Button */
+.delete-comment-button {
+    background: none;
+    border: none;
+    color: #ff4444;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-comment-button:hover {
+    color: #cc0000;
+    transform: scale(1.1); /* Slight hover zoom effect */
+}
